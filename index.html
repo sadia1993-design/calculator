@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    
+    <form  name="calc" id="myForm" >
+        <input type="text"  name="display" placeholder="0" disabled>
+     
+        <div class="keyboard">
+            <button class="operator " type="button" value="clear"     onclick="calc.display.value=' '">C</button>
+            <button class="operator " type="button" value="backspace" onclick="back()">CE</button>
+            <button class="operator"  type="button" value="%"         onclick="calc.display.value+='%'">%</button>
+            <button class="operator"  type="button" value="/"  style="background:red" onclick="calc.display.value+='/'">/</button>
+            <button class="number "   type="button" value="7"         onclick="calc.display.value+='7'">7</button>
+            <button class="number "   type="button" value="8"         onclick="calc.display.value+='8'">8</button>
+            <button class="number "   type="button" value="9"         onclick="calc.display.value+='9'">9</button>
+            <button class="number "   type="button" value="*"  style="background:orangered"   onclick="calc.display.value+='*'">*</button>
+            <button class="number "   type="button" value="4"         onclick="calc.display.value+='4'">4</button>
+            <button class="number "   type="button" value="5"         onclick="calc.display.value+='5'">5</button>
+            <button class="number "   type="button" value="6"         onclick="calc.display.value+='6'">6</button>
+            <button class="operator"  type="button" value="-"  style="background:red" onclick="calc.display.value+='-'" >-</button>
+            <button class="number "   type="button" value="1"         onclick="calc.display.value+='1'">1</button>
+            <button class="number "   type="button" value="2"         onclick="calc.display.value+='2'">2</button>
+            <button class="number "   type="button" value="3"         onclick="calc.display.value+='3'">3</button>
+            <button class="operator"  type="button" value="+"  style="background:orangered"   onclick="calc.display.value+='+'">+</button>
+        
+            <button class="number"    type="button" value="0"         onclick="calc.display.value+='0'">0</button>
+            <button class="operator"  type="button"                   onclick="calc.display.value=eval(calc.display.value)">=</button>
+        
+        </div>
+    </form>
+    
+
+   <script src="style.js"></script>
+</body>
+</html>
